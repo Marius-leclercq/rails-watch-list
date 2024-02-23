@@ -1,9 +1,9 @@
 
 <div class="container">
-  <h1>All my lists</h1>
+  <h1 class = "title">All my lists</h1>
   <ul>
     <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
+    <li><%= link_to list.name, list_path(list), class: "btn btn-dark" %></li>
     <% end %>
   </ul>
 

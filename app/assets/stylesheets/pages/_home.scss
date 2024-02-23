@@ -1,1 +1,37 @@
-// Specific CSS for your home-page
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease-in-out;
+}
+
+.title:hover {
+  color: #e74c3c; /* Change color on hover */
+}
+/* General list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each list item */
+li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+/* Style for the list item when hovered */
+li:hover {
+  background-color: #e0e0e0;
+}
