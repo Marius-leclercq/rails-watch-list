@@ -1,5 +1,9 @@
-<%= simple_form_for [@list, @bookmark] do |f| %>
-  <%= f.input :movie_id, collection: Movie.all %>
-  <%= f.input :comment %>
-  <%= f.button :submit %>
-<% end %>
+
+<div class="container">
+  <h1>Add a movie</h1>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :movie_id, collection: Movie.all %>
+    <%= f.input :comment %>
+    <%= f.submit class: "btn btn-success" %>
+  <% end %>
+</div>

@@ -16,7 +16,7 @@ class ListsController < ApplicationController
     @list = List.new(list_params)
     respond_to do |format|
       if @list.save
-        format.html { redirect_to list_url(@list), notice: "List was successfully created." }
+        format.html { redirect_to new_list_bookmark_path(@list), notice: "List was successfully created." }
       else
         format.html { render :new, status: :unprocessable_entity }
       end
